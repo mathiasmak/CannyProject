@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Nov 15 15:56:52 2022
+# Process ID: 31208
+# Current directory: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1676 C:\Users\mathi\Desktop\Kandidat\Embedded\Project\cannyProjectFolder\cannyproject\cannyproject.xpr
+# Log file: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/vivado.log
+# Journal file: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_TTC0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk
+file copy -force C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.runs/impl_1/design_1_wrapper.sysdef C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk -hwspec C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk -hwspec C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder/cannyproject/cannyproject.sdk/design_1_wrapper.hdf
