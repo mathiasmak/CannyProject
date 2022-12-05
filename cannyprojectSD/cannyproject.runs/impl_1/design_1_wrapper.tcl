@@ -51,17 +51,17 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.xpr} [current_project]
+  set_property webtalk.parent_dir C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.cache/wt [current_project]
+  set_property parent.project_path C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.xpr [current_project]
   set_property ip_repo_paths C:/Users/mathi/Desktop/Kandidat/Embedded/Project/testings/TestPorject [current_project]
-  set_property ip_output_repo {{C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.cache/ip}} [current_project]
+  set_property ip_output_repo C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet {{C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/synth_1/design_1_wrapper.dcp}}
+  add_files -quiet C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -suppress
   set_param project.isImplRun true
-  add_files {{C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/design_1.bd}}
-  set_property is_locked true [get_files {{C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/design_1.bd}}]
+  add_files C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/design_1.bd
+  set_property is_locked true [get_files C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/design_1.bd]
   set_param project.isImplRun false
   read_xdc C:/Users/mathi/Desktop/Kandidat/Embedded/Assignment_2/EmbeddedSystem_labs/lab4/lab4.srcs/sources_1/bd/system/system_ooc.xdc
   set_param project.isImplRun true

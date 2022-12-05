@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
---Date        : Thu Nov 17 15:35:23 2022
+--Date        : Mon Dec  5 11:55:38 2022
 --Host        : MakBook-Laptop running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -601,7 +601,7 @@ entity design_1 is
     FIXED_IO_ps_srstb : inout STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -697,7 +697,7 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_ps7_0_100M_0;
-  component design_1_testFlow_0_0 is
+  component design_1_greyScale_0_0 is
   port (
     s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 10 downto 0 );
     s_axi_AXILiteS_AWVALID : in STD_LOGIC;
@@ -720,7 +720,7 @@ architecture STRUCTURE of design_1 is
     ap_rst_n : in STD_LOGIC;
     interrupt : out STD_LOGIC
   );
-  end component design_1_testFlow_0_0;
+  end component design_1_greyScale_0_0;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -801,6 +801,7 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_greyScale_0_interrupt_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -811,8 +812,30 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_testFlow_0_interrupt_UNCONNECTED : STD_LOGIC;
 begin
+greyScale_0: component design_1_greyScale_0_0
+     port map (
+      ap_clk => processing_system7_0_FCLK_CLK0,
+      ap_rst_n => rst_ps7_0_100M_peripheral_aresetn(0),
+      interrupt => NLW_greyScale_0_interrupt_UNCONNECTED,
+      s_axi_AXILiteS_ARADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(10 downto 0),
+      s_axi_AXILiteS_ARREADY => ps7_0_axi_periph_M00_AXI_ARREADY,
+      s_axi_AXILiteS_ARVALID => ps7_0_axi_periph_M00_AXI_ARVALID,
+      s_axi_AXILiteS_AWADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_AWADDR(10 downto 0),
+      s_axi_AXILiteS_AWREADY => ps7_0_axi_periph_M00_AXI_AWREADY,
+      s_axi_AXILiteS_AWVALID => ps7_0_axi_periph_M00_AXI_AWVALID,
+      s_axi_AXILiteS_BREADY => ps7_0_axi_periph_M00_AXI_BREADY,
+      s_axi_AXILiteS_BRESP(1 downto 0) => ps7_0_axi_periph_M00_AXI_BRESP(1 downto 0),
+      s_axi_AXILiteS_BVALID => ps7_0_axi_periph_M00_AXI_BVALID,
+      s_axi_AXILiteS_RDATA(31 downto 0) => ps7_0_axi_periph_M00_AXI_RDATA(31 downto 0),
+      s_axi_AXILiteS_RREADY => ps7_0_axi_periph_M00_AXI_RREADY,
+      s_axi_AXILiteS_RRESP(1 downto 0) => ps7_0_axi_periph_M00_AXI_RRESP(1 downto 0),
+      s_axi_AXILiteS_RVALID => ps7_0_axi_periph_M00_AXI_RVALID,
+      s_axi_AXILiteS_WDATA(31 downto 0) => ps7_0_axi_periph_M00_AXI_WDATA(31 downto 0),
+      s_axi_AXILiteS_WREADY => ps7_0_axi_periph_M00_AXI_WREADY,
+      s_axi_AXILiteS_WSTRB(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
+      s_axi_AXILiteS_WVALID => ps7_0_axi_periph_M00_AXI_WVALID
+    );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -964,28 +987,5 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
-    );
-testFlow_0: component design_1_testFlow_0_0
-     port map (
-      ap_clk => processing_system7_0_FCLK_CLK0,
-      ap_rst_n => rst_ps7_0_100M_peripheral_aresetn(0),
-      interrupt => NLW_testFlow_0_interrupt_UNCONNECTED,
-      s_axi_AXILiteS_ARADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(10 downto 0),
-      s_axi_AXILiteS_ARREADY => ps7_0_axi_periph_M00_AXI_ARREADY,
-      s_axi_AXILiteS_ARVALID => ps7_0_axi_periph_M00_AXI_ARVALID,
-      s_axi_AXILiteS_AWADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_AWADDR(10 downto 0),
-      s_axi_AXILiteS_AWREADY => ps7_0_axi_periph_M00_AXI_AWREADY,
-      s_axi_AXILiteS_AWVALID => ps7_0_axi_periph_M00_AXI_AWVALID,
-      s_axi_AXILiteS_BREADY => ps7_0_axi_periph_M00_AXI_BREADY,
-      s_axi_AXILiteS_BRESP(1 downto 0) => ps7_0_axi_periph_M00_AXI_BRESP(1 downto 0),
-      s_axi_AXILiteS_BVALID => ps7_0_axi_periph_M00_AXI_BVALID,
-      s_axi_AXILiteS_RDATA(31 downto 0) => ps7_0_axi_periph_M00_AXI_RDATA(31 downto 0),
-      s_axi_AXILiteS_RREADY => ps7_0_axi_periph_M00_AXI_RREADY,
-      s_axi_AXILiteS_RRESP(1 downto 0) => ps7_0_axi_periph_M00_AXI_RRESP(1 downto 0),
-      s_axi_AXILiteS_RVALID => ps7_0_axi_periph_M00_AXI_RVALID,
-      s_axi_AXILiteS_WDATA(31 downto 0) => ps7_0_axi_periph_M00_AXI_WDATA(31 downto 0),
-      s_axi_AXILiteS_WREADY => ps7_0_axi_periph_M00_AXI_WREADY,
-      s_axi_AXILiteS_WSTRB(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
-      s_axi_AXILiteS_WVALID => ps7_0_axi_periph_M00_AXI_WVALID
     );
 end STRUCTURE;

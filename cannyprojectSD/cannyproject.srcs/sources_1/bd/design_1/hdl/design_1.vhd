@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
---Date        : Mon Dec  5 11:55:38 2022
+--Date        : Mon Dec  5 16:39:48 2022
 --Host        : MakBook-Laptop running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -699,7 +699,7 @@ architecture STRUCTURE of design_1 is
   end component design_1_rst_ps7_0_100M_0;
   component design_1_greyScale_0_0 is
   port (
-    s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_AXILiteS_AWVALID : in STD_LOGIC;
     s_axi_AXILiteS_AWREADY : out STD_LOGIC;
     s_axi_AXILiteS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -709,7 +709,7 @@ architecture STRUCTURE of design_1 is
     s_axi_AXILiteS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_AXILiteS_BVALID : out STD_LOGIC;
     s_axi_AXILiteS_BREADY : in STD_LOGIC;
-    s_axi_AXILiteS_ARADDR : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    s_axi_AXILiteS_ARADDR : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_AXILiteS_ARVALID : in STD_LOGIC;
     s_axi_AXILiteS_ARREADY : out STD_LOGIC;
     s_axi_AXILiteS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -818,10 +818,10 @@ greyScale_0: component design_1_greyScale_0_0
       ap_clk => processing_system7_0_FCLK_CLK0,
       ap_rst_n => rst_ps7_0_100M_peripheral_aresetn(0),
       interrupt => NLW_greyScale_0_interrupt_UNCONNECTED,
-      s_axi_AXILiteS_ARADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(10 downto 0),
+      s_axi_AXILiteS_ARADDR(12 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(12 downto 0),
       s_axi_AXILiteS_ARREADY => ps7_0_axi_periph_M00_AXI_ARREADY,
       s_axi_AXILiteS_ARVALID => ps7_0_axi_periph_M00_AXI_ARVALID,
-      s_axi_AXILiteS_AWADDR(10 downto 0) => ps7_0_axi_periph_M00_AXI_AWADDR(10 downto 0),
+      s_axi_AXILiteS_AWADDR(12 downto 0) => ps7_0_axi_periph_M00_AXI_AWADDR(12 downto 0),
       s_axi_AXILiteS_AWREADY => ps7_0_axi_periph_M00_AXI_AWREADY,
       s_axi_AXILiteS_AWVALID => ps7_0_axi_periph_M00_AXI_AWVALID,
       s_axi_AXILiteS_BREADY => ps7_0_axi_periph_M00_AXI_BREADY,

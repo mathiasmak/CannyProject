@@ -251,3 +251,719 @@ arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
   19056	   1148	  22576	  42780	   a71c	cannySDK.elf
 'Finished building: cannySDK.elf.size'
 ' '
+16:14:56 **** Clean-only build of configuration Debug for project cannySDK ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  cannySDK.elf.size  cannySDK.elf
+' '
+16:14:56 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57552	   2228	  24576	  84356	  14984	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:14:59 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57552	   2228	  24576	  84356	  14984	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:27:40 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:80:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:45:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:27:45 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:81:6: error: 'string' is not a member of 'std'
+      std::string str{0xff, 0x00, 0x32, 0xFE, 0x88, 0x10, 0x34, 0x6F, 0x54};
+      ^~~
+../src/main.cc:60:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:80:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:45:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:27:53 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:80:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:45:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:27:57 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:80:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:45:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:46:14 **** Clean-only build of project cannyBSP ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s clean 
+rm: cannot lstat `*.o': Invalid argument
+make[1]: *** [clean] Error 1
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s clean 
+make: *** [ps7_cortexa9_0/libsrc/greyScale_v1_1/src/make.clean] Error 2
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s clean 
+make: Target `clean' not remade because of errors.
+16:46:17 **** Clean-only build of configuration Debug for project cannySDK ****
+make clean 
+rm -rf  ./src/main.d  ./src/FileSDCard.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/FileSDCard.d  cannySDK.elf.size  cannySDK.elf
+' '
+16:46:18 **** Build of project cannyBSP ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling greyScale"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+'Finished building libraries'
+16:46:56 **** Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:80:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:45:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:47:58 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:54:9: warning: unused variable 'size' [-Wunused-variable]
+     int size = sizeof(readText);
+         ^~~~
+../src/main.cc:74:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:39:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:48:13 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:73:10: warning: unused variable 'inti' [-Wunused-variable]
+      int inti = 255;
+          ^~~~
+../src/main.cc: At global scope:
+../src/main.cc:39:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 814410	   3284	2391456	3209150	 30f7be	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:48:19 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:39:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 796211	   3284	2391456	3190951	 30b0a7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:48:41 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:73:6: error: 'xgreyScale' was not declared in this scope
+      xgreyScale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:39:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:48:48 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:73:6: error: 'xgreyscale' was not declared in this scope
+      xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:39:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:49:18 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:74:6: error: 'xgreyscale' was not declared in this scope
+      xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:49:30 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:74:6: error: 'xgreyscale' was not declared in this scope
+      xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:50:51 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:74:6: error: 'Xgreyscale' was not declared in this scope
+      Xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:51:16 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:74:6: error: 'Xgreyscale' was not declared in this scope
+      Xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:51:23 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:74:6: error: 'Xgreyscale' was not declared in this scope
+      Xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:52:37 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:76:6: error: 'Xgreyscale' was not declared in this scope
+      Xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:58:23 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:76:6: error: 'xgreyscale' was not declared in this scope
+      xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:59:18 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:76:6: error: 'xgreyscale' was not declared in this scope
+      xgreyscale greyInstance;
+      ^~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+17:02:12 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:76:6: error: 'XGeyscale' was not declared in this scope
+      XGeyscale greyInstance;
+      ^~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+17:02:15 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:76:17: warning: unused variable 'greyInstance' [-Wunused-variable]
+      XGreyscale greyInstance;
+                 ^~~~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 796211	   3284	2391456	3190951	 30b0a7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+17:04:36 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801079	   3296	2391456	3195831	 30c3b7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+17:09:39 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:83:52: error: expected ';' before ')' token
+      for(int column = 0 ; column < amountOfColumns )
+                                                    ^
+../src/main.cc:83:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+      for(int column = 0 ; column < amountOfColumns )
+      ^~~
+../src/main.cc:91:13: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+             if (result != XST_SUCCESS) printf("Failed to mount SD card\r\n");
+             ^~
+../src/main.cc:81:10: warning: unused variable 'amounmtOfRows' [-Wunused-variable]
+      int amounmtOfRows = 512;
+          ^~~~~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+17:11:50 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:83:54: warning: for increment expression has no effect [-Wunused-value]
+      for(int column = 0 ; column < amountOfColumns ; amountOfColumns )
+                                                      ^~~~~~~~~~~~~~~
+../src/main.cc:83:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+      for(int column = 0 ; column < amountOfColumns ; amountOfColumns )
+      ^~~
+../src/main.cc:91:13: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+             if (result != XST_SUCCESS) printf("Failed to mount SD card\r\n");
+             ^~
+../src/main.cc:81:10: warning: unused variable 'amounmtOfRows' [-Wunused-variable]
+      int amounmtOfRows = 512;
+          ^~~~~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801143	   3296	2391456	3195895	 30c3f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '

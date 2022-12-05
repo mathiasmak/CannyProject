@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Mon Dec  5 12:31:27 2022
+| Date             : Mon Dec  5 16:44:44 2022
 | Host             : MakBook-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.679  |
-| Dynamic (W)              | 1.552  |
+| Total On-Chip Power (W)  | 1.678  |
+| Dynamic (W)              | 1.551  |
 | Device Static (W)        | 0.127  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 65.6   |
@@ -50,19 +50,19 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.010 |        3 |       --- |             --- |
-| Slice Logic             |     0.006 |     5312 |       --- |             --- |
-|   LUT as Logic          |     0.005 |     1876 |     17600 |           10.66 |
-|   Register              |    <0.001 |     2182 |     35200 |            6.20 |
-|   CARRY4                |    <0.001 |      166 |      4400 |            3.77 |
-|   F7/F8 Muxes           |    <0.001 |       22 |     17600 |            0.13 |
-|   LUT as Shift Register |    <0.001 |       79 |      6000 |            1.32 |
+| Slice Logic             |     0.006 |     5319 |       --- |             --- |
+|   LUT as Logic          |     0.005 |     1880 |     17600 |           10.68 |
+|   Register              |    <0.001 |     2194 |     35200 |            6.23 |
+|   CARRY4                |    <0.001 |      172 |      4400 |            3.91 |
+|   F7/F8 Muxes           |    <0.001 |       27 |     17600 |            0.15 |
+|   LUT as Shift Register |    <0.001 |       80 |      6000 |            1.33 |
 |   Others                |     0.000 |      595 |       --- |             --- |
-| Signals                 |     0.010 |     5302 |       --- |             --- |
+| Signals                 |     0.009 |     5332 |       --- |             --- |
 | Block RAM               |     0.005 |        2 |        60 |            3.33 |
 | DSPs                    |     0.006 |       25 |        80 |           31.25 |
 | PS7                     |     1.516 |        1 |       --- |             --- |
 | Static Power            |     0.127 |          |           |                 |
-| Total                   |     1.679 |          |           |                 |
+| Total                   |     1.678 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.043 |       0.036 |      0.007 |
+| Vccint    |       1.000 |     0.042 |       0.035 |      0.007 |
 | Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,10 +148,10 @@ Table of Contents
 +---------------------------------------------------------------------+-----------+
 | Name                                                                | Power (W) |
 +---------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                    |     1.552 |
-|   design_1_i                                                        |     1.552 |
-|     greyScale_0                                                     |     0.030 |
-|       U0                                                            |     0.030 |
+| design_1_wrapper                                                    |     1.551 |
+|   design_1_i                                                        |     1.551 |
+|     greyScale_0                                                     |     0.029 |
+|       U0                                                            |     0.029 |
 |         greyScale_AXILiteS_s_axi_U                                  |     0.007 |
 |           int_pixelInput                                            |     0.003 |
 |           int_pixelOutput                                           |     0.003 |
@@ -297,10 +297,10 @@ Table of Contents
 |                       RND_BIT_GEN                                   |     0.000 |
 |                         NORM_1_OR_0.STRUCT_REQ.GENERAL.RND1         |     0.000 |
 |         greyScale_dmul_64cud_U2                                     |     0.005 |
-|           greyScale_ap_dmul_4_max_dsp_64_u                          |     0.005 |
-|             U0                                                      |     0.005 |
-|               i_synth                                               |     0.005 |
-|                 MULT.OP                                             |     0.005 |
+|           greyScale_ap_dmul_4_max_dsp_64_u                          |     0.004 |
+|             U0                                                      |     0.004 |
+|               i_synth                                               |     0.004 |
+|                 MULT.OP                                             |     0.004 |
 |                   EXP                                               |    <0.001 |
 |                     COND_DET_A                                      |    <0.001 |
 |                       MANT_CARRY.MANT_ALL_ZERO_DET                  |    <0.001 |

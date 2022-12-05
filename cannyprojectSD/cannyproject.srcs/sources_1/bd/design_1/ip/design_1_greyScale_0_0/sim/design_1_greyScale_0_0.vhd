@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:greyScale:1.1
--- IP Revision: 1212051118
+-- IP Revision: 1412051632
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,7 +55,7 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_greyScale_0_0 IS
   PORT (
-    s_axi_AXILiteS_AWADDR : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    s_axi_AXILiteS_AWADDR : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     s_axi_AXILiteS_AWVALID : IN STD_LOGIC;
     s_axi_AXILiteS_AWREADY : OUT STD_LOGIC;
     s_axi_AXILiteS_WDATA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -65,7 +65,7 @@ ENTITY design_1_greyScale_0_0 IS
     s_axi_AXILiteS_BRESP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_AXILiteS_BVALID : OUT STD_LOGIC;
     s_axi_AXILiteS_BREADY : IN STD_LOGIC;
-    s_axi_AXILiteS_ARADDR : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    s_axi_AXILiteS_ARADDR : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     s_axi_AXILiteS_ARVALID : IN STD_LOGIC;
     s_axi_AXILiteS_ARREADY : OUT STD_LOGIC;
     s_axi_AXILiteS_RDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -87,7 +87,7 @@ ARCHITECTURE design_1_greyScale_0_0_arch OF design_1_greyScale_0_0 IS
       C_S_AXI_AXILITES_DATA_WIDTH : INTEGER
     );
     PORT (
-      s_axi_AXILiteS_AWADDR : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      s_axi_AXILiteS_AWADDR : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
       s_axi_AXILiteS_AWVALID : IN STD_LOGIC;
       s_axi_AXILiteS_AWREADY : OUT STD_LOGIC;
       s_axi_AXILiteS_WDATA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -97,7 +97,7 @@ ARCHITECTURE design_1_greyScale_0_0_arch OF design_1_greyScale_0_0 IS
       s_axi_AXILiteS_BRESP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_AXILiteS_BVALID : OUT STD_LOGIC;
       s_axi_AXILiteS_BREADY : IN STD_LOGIC;
-      s_axi_AXILiteS_ARADDR : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      s_axi_AXILiteS_ARADDR : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
       s_axi_AXILiteS_ARVALID : IN STD_LOGIC;
       s_axi_AXILiteS_ARREADY : OUT STD_LOGIC;
       s_axi_AXILiteS_RDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -133,7 +133,7 @@ ARCHITECTURE design_1_greyScale_0_0_arch OF design_1_greyScale_0_0 IS
 BEGIN
   U0 : greyScale
     GENERIC MAP (
-      C_S_AXI_AXILITES_ADDR_WIDTH => 11,
+      C_S_AXI_AXILITES_ADDR_WIDTH => 13,
       C_S_AXI_AXILITES_DATA_WIDTH => 32
     )
     PORT MAP (

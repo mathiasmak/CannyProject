@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Dec  5 11:55:40 2022" VIVADOVERSION="2017.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Dec  5 16:39:50 2022" VIVADOVERSION="2017.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -272,16 +272,16 @@
             </REGISTER>
             <REGISTER NAME="Memory_pixelInput">
               <PROPERTY NAME="DESCRIPTION" VALUE="Memory pixelInput"/>
-              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="512"/>
-              <PROPERTY NAME="SIZE" VALUE="512"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2048"/>
+              <PROPERTY NAME="SIZE" VALUE="2048"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
             </REGISTER>
             <REGISTER NAME="Memory_pixelOutput">
               <PROPERTY NAME="DESCRIPTION" VALUE="Memory pixelOutput"/>
-              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1024"/>
-              <PROPERTY NAME="SIZE" VALUE="512"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4096"/>
+              <PROPERTY NAME="SIZE" VALUE="2048"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
@@ -290,7 +290,7 @@
         </ADDRESSBLOCK>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="C_S_AXI_AXILITES_ADDR_WIDTH" VALUE="11"/>
+        <PARAMETER NAME="C_S_AXI_AXILITES_ADDR_WIDTH" VALUE="13"/>
         <PARAMETER NAME="C_S_AXI_AXILITES_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_greyScale_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10.000000"/>
@@ -303,7 +303,7 @@
         <PARAMETER NAME="C_S_AXI_AXILITES_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="10" NAME="s_axi_AXILiteS_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="greyScale_0_s_axi_AXILiteS_AWADDR">
+        <PORT DIR="I" LEFT="12" NAME="s_axi_AXILiteS_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="greyScale_0_s_axi_AXILiteS_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_awaddr"/>
           </CONNECTIONS>
@@ -353,7 +353,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="10" NAME="s_axi_AXILiteS_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="greyScale_0_s_axi_AXILiteS_ARADDR">
+        <PORT DIR="I" LEFT="12" NAME="s_axi_AXILiteS_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="greyScale_0_s_axi_AXILiteS_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_araddr"/>
           </CONNECTIONS>
@@ -402,7 +402,7 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="s_axi_AXILiteS" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="11"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="13"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
           <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>

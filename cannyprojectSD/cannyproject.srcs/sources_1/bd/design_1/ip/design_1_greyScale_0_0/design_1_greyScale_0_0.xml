@@ -153,7 +153,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.ADDR_WIDTH">11</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.ADDR_WIDTH">13</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
@@ -791,8 +791,8 @@
           <spirit:name>Memory_pixelInput</spirit:name>
           <spirit:displayName>Memory_pixelInput</spirit:displayName>
           <spirit:description>Memory pixelInput</spirit:description>
-          <spirit:addressOffset>512</spirit:addressOffset>
-          <spirit:size spirit:format="long">512</spirit:size>
+          <spirit:addressOffset>2048</spirit:addressOffset>
+          <spirit:size spirit:format="long">2048</spirit:size>
           <spirit:access>read-write</spirit:access>
           <spirit:reset>
             <spirit:value spirit:format="long">0</spirit:value>
@@ -802,8 +802,8 @@
           <spirit:name>Memory_pixelOutput</spirit:name>
           <spirit:displayName>Memory_pixelOutput</spirit:displayName>
           <spirit:description>Memory pixelOutput</spirit:description>
-          <spirit:addressOffset>1024</spirit:addressOffset>
-          <spirit:size spirit:format="long">512</spirit:size>
+          <spirit:addressOffset>4096</spirit:addressOffset>
+          <spirit:size spirit:format="long">2048</spirit:size>
           <spirit:access>read-write</spirit:access>
           <spirit:reset>
             <spirit:value spirit:format="long">0</spirit:value>
@@ -852,11 +852,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 05 10:55:40 UTC 2022</spirit:value>
+            <spirit:value>Mon Dec 05 15:39:49 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fcbcb5d6</spirit:value>
+            <spirit:value>7:aee2cd78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -871,11 +871,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 05 10:55:40 UTC 2022</spirit:value>
+            <spirit:value>Mon Dec 05 15:39:49 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fcbcb5d6</spirit:value>
+            <spirit:value>7:aee2cd78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -917,11 +917,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 05 10:55:39 UTC 2022</spirit:value>
+            <spirit:value>Mon Dec 05 15:39:49 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:71b35627</spirit:value>
+            <spirit:value>7:21e7383a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -936,11 +936,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 05 10:55:40 UTC 2022</spirit:value>
+            <spirit:value>Mon Dec 05 15:39:49 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:71b35627</spirit:value>
+            <spirit:value>7:21e7383a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -954,11 +954,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 05 10:57:07 UTC 2022</spirit:value>
+            <spirit:value>Mon Dec 05 15:41:41 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fcbcb5d6</spirit:value>
+            <spirit:value>7:aee2cd78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -969,7 +969,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH&apos;)) - 1)">10</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH&apos;)) - 1)">12</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1115,7 +1115,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH&apos;)) - 1)">10</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH&apos;)) - 1)">12</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1256,7 +1256,7 @@
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>C_S_AXI_AXILITES_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH">11</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_AXILITES_ADDR_WIDTH">13</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_AXI_AXILITES_DATA_WIDTH</spirit:name>
@@ -1403,15 +1403,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1420,23 +1420,23 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_dadd_64bkb.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_dmul_64cud.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_sitodp_dEe.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1595,42 +1595,42 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_dadd_64bkb.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_dmul_64cud.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/vhdl/greyScale_sitodp_dEe.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>../../ipshared/a289/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1745,7 +1745,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>Greyscale</xilinx:displayName>
-      <xilinx:coreRevision>1212051118</xilinx:coreRevision>
+      <xilinx:coreRevision>1412051632</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop"/>

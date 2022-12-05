@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="078722eb18c544dabd126b29da54867e"/>
@@ -174,7 +174,9 @@
     </Run>
     <Run Id="design_1_greyScale_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_greyScale_0_0" Part="xc7z010clg400-1" ConstrsSet="design_1_greyScale_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_greyScale_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -232,7 +234,9 @@
     </Run>
     <Run Id="design_1_greyScale_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="design_1_greyScale_0_0" Description="Default settings for Implementation." SynthRun="design_1_greyScale_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

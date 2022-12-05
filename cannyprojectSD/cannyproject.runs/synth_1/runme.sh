@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/synth_1'
+HD_PWD='C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
