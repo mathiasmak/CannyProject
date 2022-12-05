@@ -1,0 +1,41 @@
+/*
+ * utilFunctions.cpp
+ *
+ *  Created on: 26 Nov 2022
+ *      Author: mathi
+ */
+
+#include "constants.h"
+		//GET THIS INFORMATION FROM OVERALL HEADERFILE
+    	int offset = 54;
+    	int grey = 0;
+    	int amountOfRows = 150;
+    	int bytesPerPixel = 3;
+    	int bytesPerRow = amountOfRows * bytesPerPixel;
+    	int padding = bytesPerRow%4;
+
+    	//MAKE VARIABLES HERE AND MAYBE READ FROM HEADER ONE DAY
+
+    	//width of each row + bytePerRow%4(padding) up to 4 byte, hence modulo 4
+    	int informationPerRow = amountOfRows*bytesPerPixel + padding; // = 452
+
+    	char* greyScaleImage(char* input){
+        	for(int j = 0 ; j < amountOfRows ; j++){
+
+        	for(int i = 0 ; i < informationPerRow ; i = i + 3){
+        		grey=((int)input[(offset+i)+j*informationPerRow]*0.3 + (int)input[(offset+i+1)+j*informationPerRow]*0.59 + (int)input[(offset+i+2)+j*informationPerRow]*0.11);
+        		input[(offset+i)+j*informationPerRow] = grey;
+        		input[(offset+i+1)+j*informationPerRow] = grey;
+        		input[(offset+i+2)+j*informationPerRow] = grey;
+
+        		if(i == informationPerRow - padding - bytesPerPixel){
+        			i = 10000000;
+        			continue;
+        		}
+
+        		}
+        	}
+        	return input;
+    	}
+
+

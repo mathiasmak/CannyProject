@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  5 12:58:44 2022
+# Process ID: 22852
+# Current directory: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22868 C:\Users\mathi\Desktop\Kandidat\Embedded\Project\cannyProjectFolder - GIT\CannyProject\cannyprojectSD\cannyproject.xpr
+# Log file: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/vivado.log
+# Journal file: C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.xpr}
+update_compile_order -fileset sources_1
+file mkdir {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.sdk}
+file copy -force {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/impl_1/design_1_wrapper.sysdef} {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.sdk/design_1_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.sdk} -hwspec {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.sdk/design_1_wrapper.hdf}

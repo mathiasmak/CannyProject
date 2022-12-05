@@ -1,0 +1,10 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+
+int main()
+{
+	return 0;
+}

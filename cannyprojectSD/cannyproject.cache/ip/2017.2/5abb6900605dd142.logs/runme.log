@@ -1,0 +1,769 @@
+
+*** Running vivado
+    with args -log design_1_greyScale_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_greyScale_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_greyScale_0_0.tcl -notrace
+Command: synth_design -top design_1_greyScale_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 311.695 ; gain = 80.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_greyScale_0_0' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ip/design_1_greyScale_0_0/synth/design_1_greyScale_0_0.vhd:81]
+INFO: [Synth 8-3491] module 'greyScale' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:12' bound to instance 'U0' of component 'greyScale' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ip/design_1_greyScale_0_0/synth/design_1_greyScale_0_0.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'greyScale' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:122]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:125]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:136]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:138]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:142]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:144]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:148]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:150]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:158]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:161]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:165]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:169]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:175]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:180]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:190]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:194]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:196]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:198]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:204]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:206]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:210]
+INFO: [Synth 8-3491] module 'greyScale_AXILiteS_s_axi' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:12' bound to instance 'greyScale_AXILiteS_s_axi_U' of component 'greyScale_AXILiteS_s_axi' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'greyScale_AXILiteS_s_axi' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:87]
+INFO: [Synth 8-3491] module 'greyScale_AXILiteS_s_axi_ram' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:581' bound to instance 'int_pixelInput' of component 'greyScale_AXILiteS_s_axi_ram' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'greyScale_AXILiteS_s_axi_ram' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:604]
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'greyScale_AXILiteS_s_axi_ram' (1#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:604]
+INFO: [Synth 8-3491] module 'greyScale_AXILiteS_s_axi_ram' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:581' bound to instance 'int_pixelOutput' of component 'greyScale_AXILiteS_s_axi_ram' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:212]
+WARNING: [Synth 8-6014] Unused sequential element int_pixelOutput_shift_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:568]
+WARNING: [Synth 8-6014] Unused sequential element int_pixelOutput_address1_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:348]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:455]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_AXILiteS_s_axi' (2#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:87]
+INFO: [Synth 8-3491] module 'greyScale_dadd_64bkb' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd:11' bound to instance 'greyScale_dadd_64bkb_U0' of component 'greyScale_dadd_64bkb' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'greyScale_dadd_64bkb' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd:29]
+INFO: [Synth 8-3491] module 'greyScale_ap_dadd_3_full_dsp_64' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd:59' bound to instance 'greyScale_ap_dadd_3_full_dsp_64_u' of component 'greyScale_ap_dadd_3_full_dsp_64' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'greyScale_ap_dadd_3_full_dsp_64' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_ap_dadd_3_full_dsp_64' (29#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dadd_3_full_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_dadd_64bkb' (30#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dadd_64bkb.vhd:29]
+INFO: [Synth 8-3491] module 'greyScale_dmul_64cud' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd:11' bound to instance 'greyScale_dmul_64cud_U1' of component 'greyScale_dmul_64cud' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:380]
+INFO: [Synth 8-638] synthesizing module 'greyScale_dmul_64cud' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd:29]
+INFO: [Synth 8-3491] module 'greyScale_ap_dmul_4_max_dsp_64' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd:59' bound to instance 'greyScale_ap_dmul_4_max_dsp_64_u' of component 'greyScale_ap_dmul_4_max_dsp_64' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'greyScale_ap_dmul_4_max_dsp_64' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_ap_dmul_4_max_dsp_64' (37#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_dmul_4_max_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_dmul_64cud' (38#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd:29]
+INFO: [Synth 8-3491] module 'greyScale_dmul_64cud' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_dmul_64cud.vhd:11' bound to instance 'greyScale_dmul_64cud_U2' of component 'greyScale_dmul_64cud' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:395]
+INFO: [Synth 8-3491] module 'greyScale_sitodp_dEe' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd:11' bound to instance 'greyScale_sitodp_dEe_U3' of component 'greyScale_sitodp_dEe' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'greyScale_sitodp_dEe' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd:27]
+INFO: [Synth 8-3491] module 'greyScale_ap_sitodp_4_no_dsp_32' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd:59' bound to instance 'greyScale_ap_sitodp_4_no_dsp_32_u' of component 'greyScale_ap_sitodp_4_no_dsp_32' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'greyScale_ap_sitodp_4_no_dsp_32' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_ap_sitodp_4_no_dsp_32' (41#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/ip/greyScale_ap_sitodp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'greyScale_sitodp_dEe' (42#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd:27]
+INFO: [Synth 8-3491] module 'greyScale_sitodp_dEe' declared at 'c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_sitodp_dEe.vhd:11' bound to instance 'greyScale_sitodp_dEe_U4' of component 'greyScale_sitodp_dEe' [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:423]
+WARNING: [Synth 8-6014] Unused sequential element ap_ready_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element pixelOutput_we0_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:362]
+INFO: [Synth 8-256] done synthesizing module 'greyScale' (43#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'design_1_greyScale_0_0' (44#1) [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ip/design_1_greyScale_0_0/synth/design_1_greyScale_0_0.vhd:81]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized104 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized104 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized104 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized104 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized104 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized106 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized106 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized106 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized12 has unconnected port B[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized92 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized92 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized92 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized67 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized67 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized67 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized67 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized67 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized112 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized112 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized112 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized112 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized112 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized15 has unconnected port B[26]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized110 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized110 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized110 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized110 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized110 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 419.906 ; gain = 188.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 419.906 ; gain = 188.773
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 891 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ip/design_1_greyScale_0_0/constraints/greyScale_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ip/design_1_greyScale_0_0/constraints/greyScale_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/design_1_greyScale_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/design_1_greyScale_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  FDE => FDRE: 37 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 691.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 691.371 ; gain = 460.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 691.371 ; gain = 460.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/design_1_greyScale_0_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 691.371 ; gain = 460.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element int_pixelInput_shift_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:474]
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "icmp_fu_193_p2" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element pixelStart_1_fu_84_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:474]
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 691.371 ; gain = 460.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/YES_DIST_1.DIST_1_PREADD_DEL' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/YES_DIST_1.DIST_1_ADD_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_DEL' (delay__parameterized7) to 'U0/greyScale_dadd_64bkb_U0/greyScale_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized1) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_DEL' (delay__parameterized7) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized50) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized50) to 'greyScale_dmul_64cud:/greyScale_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized7) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized50) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized50) to 'greyScale_sitodp_dEe:/greyScale_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_193_p2" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element pixelStart_1_fu_84_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale.vhd:474]
+INFO: [Synth 8-3971] The signal greyScale_AXILiteS_s_axi_U/int_pixelInput/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element greyScale_AXILiteS_s_axi_U/int_pixelOutput/q0_reg was removed.  [c:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.srcs/sources_1/bd/design_1/ipshared/a492/hdl/vhdl/greyScale_AXILiteS_s_axi.vhd:639]
+INFO: [Synth 8-3971] The signal greyScale_AXILiteS_s_axi_U/int_pixelOutput/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[1]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[2] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[3]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[4]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[8]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[9]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[10]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[11]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[53]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[12] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[13]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[14]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[52] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[53] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[33] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[52] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[53]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[54]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[17] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[18]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[19]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[20]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[21]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[22] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[23]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[24]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[27] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[28]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[29]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[30]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[31]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[32] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[33]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[37] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[39] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[44] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[45] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[48] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[50] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[34]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[35] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[36] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[37] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[38]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[39]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[40]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[41]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[42] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[43]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[44]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U1/din1_buf1_reg[47] )
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[48]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[50]' (FD) to 'U0/greyScale_dmul_64cud_U1/din1_buf1_reg[51]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_dmul_64cud_U2/din1_buf1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\greyScale_AXILiteS_s_axi_U/rstate_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\greyScale_AXILiteS_s_axi_U/wstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_AXILiteS_s_axi_U/wstate_reg[2]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_AXILiteS_s_axi_U/rstate_reg[2]) is unused and will be removed from module greyScale.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (sum2_cast_reg_417_reg[9]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (sum4_cast_reg_442_reg[9]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[63]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[62]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[61]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[60]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[59]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[58]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[57]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[56]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[55]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[52]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[47]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[46]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[45]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[42]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[37]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[36]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[35]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[32]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[27]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[26]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[25]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[22]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[17]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[16]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[15]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[12]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[7]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[6]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[5]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[2]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U1/din1_buf1_reg[0]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[63]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[62]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[61]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[60]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[59]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[58]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[57]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[56]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[55]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[54]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[53]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[52]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[51]) is unused and will be removed from module greyScale.
+WARNING: [Synth 8-3332] Sequential element (greyScale_dmul_64cud_U2/din1_buf1_reg[50]) is unused and will be removed from module greyScale.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sh_assign_1_reg_492_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 691.371 ; gain = 460.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 762.379 ; gain = 531.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 775.406 ; gain = 544.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/greyScale_AXILiteS_s_axi_U/int_pixelInput/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/greyScale_AXILiteS_s_axi_U/int_pixelInput/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/greyScale_AXILiteS_s_axi_U/int_pixelOutput/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    27|
+|2     |DSP48E1    |     4|
+|3     |DSP48E1_1  |     1|
+|4     |DSP48E1_10 |     2|
+|5     |DSP48E1_11 |     2|
+|6     |DSP48E1_2  |     2|
+|7     |DSP48E1_3  |     2|
+|8     |DSP48E1_4  |     2|
+|9     |DSP48E1_5  |     2|
+|10    |DSP48E1_6  |     2|
+|11    |DSP48E1_7  |     2|
+|12    |DSP48E1_8  |     2|
+|13    |DSP48E1_9  |     2|
+|14    |LUT1       |    72|
+|15    |LUT2       |   186|
+|16    |LUT3       |   449|
+|17    |LUT4       |   279|
+|18    |LUT5       |   279|
+|19    |LUT6       |   638|
+|20    |MUXCY      |   453|
+|21    |MUXF7      |    21|
+|22    |MUXF8      |     1|
+|23    |RAMB36E1   |     2|
+|24    |SRL16E     |    26|
+|25    |XORCY      |   304|
+|26    |FDE        |    37|
+|27    |FDRE       |  1863|
+|28    |FDSE       |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 798.695 ; gain = 567.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 601 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 798.695 ; gain = 296.098
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 798.695 ; gain = 567.562
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 848 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 188 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 151 instances
+  FDE => FDRE: 37 instances
+
+319 Infos, 198 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 798.695 ; gain = 571.195
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolder - GIT/CannyProject/cannyprojectSD/cannyproject.runs/design_1_greyScale_0_0_synth_1/design_1_greyScale_0_0.dcp' has been generated.
