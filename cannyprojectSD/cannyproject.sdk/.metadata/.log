@@ -11200,3 +11200,43 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 !SUBENTRY 1 org.eclipse.core.expressions 4 201 2022-12-05 16:58:45.202
 !MESSAGE No property tester contributes a property org.eclipse.jdt.launching.isContainer to type class org.eclipse.core.internal.resources.Project
+!SESSION 2022-12-05 21:35:37.310 -----------------------------------------------
+eclipse.buildId=2017.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.sdk
+
+!ENTRY org.eclipse.ui 2 0 2022-12-05 21:35:55.958
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-12-05 21:35:55.958
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-12-05 21:35:57.139
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-12-05 21:35:57.139
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:10.131
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:10.132
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:10.140
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:10.141
+!MESSAGE XSCT Command: [setws C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.sdk], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:13.535
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:13.536
+!MESSAGE XSCT command with result: [setws C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.sdk], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:13.558
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-05 21:36:16.320
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/mathi/Desktop/Kandidat/Embedded/Project/cannyProjectFolderGIT/CannyProject/cannyprojectSD/cannyproject.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5

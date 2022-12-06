@@ -78,9 +78,27 @@ int main()
     	XGreyscale_Initialize(&greyInstance , 0);
 
     	int amountOfColumns = 512;
-    	int amounmtOfRows = 512;
+    	int amountOfRows = 512;
+    	int offset = 54;
 
-    	for(int column = 0 ; column < amountOfColumns ; amountOfColumns )
+    	bool dataLoaded = false;
+
+    	char oneColumn[amountOfRows*3];
+
+    	for(int column = 0 ; column < amountOfColumns; column = column + 1){
+
+    		for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
+
+    			// offset is 54. row is how far in a row and column*amountOfRows is how far we are in the 1d array
+    			// could be turned to a 2d array for easier access
+    			oneColumn[row] = readText[(offset+row)+column*amountOfRows];
+    		}
+
+			while(XGreyscale_IsReady(&greyInstance) == 0){
+
+			}
+
+    	}
 
 
 
@@ -106,6 +124,44 @@ int main()
 }
 
 /*
+
+ void EqHLS::filterSample(unsigned long sample)
+
+{
+
+            // send samples after shifting least significant 8 bits as the filter
+
+            // requires 16 bit input sample
+
+            while (XEq_IsReady(&mHlsEq) == 0); // Polling ready register
+
+            XEq_Set_band(&mHlsEq, 0xff); // Ensure EQ filtering samples
+
+            XEq_Set_sampleIn(&mHlsEq, sample >> 8);
+
+            XEq_Start(&mHlsEq);
+
+}
+
+
+
+unsigned long EqHLS::getFiltered(void)
+
+{
+
+            unsigned long u32Data;
+
+
+
+            while (XEq_IsDone(&mHlsEq) == 0); // Polling done register
+
+            u32Data = XEq_Get_sampleOut(&mHlsEq);
+
+            // shift left by 8 bits as output sample is 16 bit whereas CODEC requires 24 bits
+
+    return u32Data << 8;
+
+}
 
 int main()
 {
