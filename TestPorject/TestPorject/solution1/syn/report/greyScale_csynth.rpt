@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vivado HLS Report for 'greyScale'
+================================================================
+* Date:           Mon Dec  5 16:32:11 2022
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        TestPorject
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.23|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|        30|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|    749|    797|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        4|     25|   2099|   3775|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|    277|
+|Register         |        -|      -|    581|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        4|     25|   3429|   4849|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        3|     31|      9|     27|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+--------------------------+---------+-------+-----+------+
+    |          Instance          |          Module          | BRAM_18K| DSP48E|  FF |  LUT |
+    +----------------------------+--------------------------+---------+-------+-----+------+
+    |greyScale_AXILiteS_s_axi_U  |greyScale_AXILiteS_s_axi  |        4|      0|  196|   180|
+    |greyScale_dadd_64bkb_U0     |greyScale_dadd_64bkb      |        0|      3|  445|  1149|
+    |greyScale_dmul_64cud_U1     |greyScale_dmul_64cud      |        0|     11|  317|   578|
+    |greyScale_dmul_64cud_U2     |greyScale_dmul_64cud      |        0|     11|  317|   578|
+    |greyScale_sitodp_dEe_U3     |greyScale_sitodp_dEe      |        0|      0|  412|   645|
+    |greyScale_sitodp_dEe_U4     |greyScale_sitodp_dEe      |        0|      0|  412|   645|
+    +----------------------------+--------------------------+---------+-------+-----+------+
+    |Total                       |                          |        4|     25| 2099|  3775|
+    +----------------------------+--------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+-----+-----+------------+------------+
+    |     Variable Name     | Operation| DSP48E|  FF | LUT | Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+-----+-----+------------+------------+
+    |pixelStart_fu_380_p2   |     +    |      0|  101|   37|           2|          32|
+    |sh_assign_fu_271_p2    |     +    |      0|   41|   17|          11|          12|
+    |sum2_fu_207_p2         |     +    |      0|   41|   17|           1|          12|
+    |sum4_fu_226_p2         |     +    |      0|   41|   17|           2|          12|
+    |tmp_3_i_i_i_fu_285_p2  |     -    |      0|   38|   16|          10|          11|
+    |tmp_8_fu_368_p2        |     -    |      0|   29|   13|           1|           8|
+    |icmp_fu_193_p2         |   icmp   |      0|    0|   16|          30|           1|
+    |tmp_6_i_i_i_fu_327_p2  |   lshr   |      0|  143|  162|          54|          54|
+    |sh_assign_1_fu_295_p3  |  select  |      0|    0|   12|           1|          12|
+    |tmp_12_fu_361_p3       |  select  |      0|    0|    8|           1|           8|
+    |tmp_9_fu_373_p3        |  select  |      0|    0|    8|           1|           8|
+    |tmp_8_i_i_i_fu_333_p2  |    shl   |      0|  315|  474|         137|         137|
+    +-----------------------+----------+-------+-----+-----+------------+------------+
+    |Total                  |          |      0|  749|  797|         251|         307|
+    +-----------------------+----------+-------+-----+-----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+-----+-----------+-----+-----------+
+    |         Name         | LUT | Input Size| Bits| Total Bits|
+    +----------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm             |  145|         32|    1|         32|
+    |grp_fu_144_p0         |   15|          3|   64|        192|
+    |grp_fu_144_p1         |   15|          3|   64|        192|
+    |grp_fu_148_p0         |   15|          3|   64|        192|
+    |grp_fu_148_p1         |   15|          3|   64|        192|
+    |grp_fu_159_p0         |   15|          3|   32|         96|
+    |pixelInput_address0   |   21|          4|   11|         44|
+    |pixelOutput_address0  |   21|          4|   11|         44|
+    |pixelOutput_d0        |   15|          3|    8|         24|
+    +----------------------+-----+-----------+-----+-----------+
+    |Total                 |  277|         58|  319|       1008|
+    +----------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+----+-----+-----------+
+    |            Name           | FF | LUT| Bits| Const Bits|
+    +---------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                  |  31|   0|   31|          0|
+    |isNeg_reg_487              |   1|   0|    1|          0|
+    |loc_V_1_reg_482            |  52|   0|   52|          0|
+    |p_Result_s_reg_477         |   1|   0|    1|          0|
+    |pixelInput_load_1_reg_427  |   8|   0|    8|          0|
+    |pixelStart_1_fu_84         |  32|   0|   32|          0|
+    |reg_165                    |   8|   0|    8|          0|
+    |reg_169                    |  64|   0|   64|          0|
+    |reg_175                    |  64|   0|   64|          0|
+    |sh_assign_1_reg_492        |  12|   0|   12|          0|
+    |sum2_cast_reg_417          |  12|   0|   32|         20|
+    |sum4_cast_reg_442          |  12|   0|   32|         20|
+    |tmp_12_reg_497             |   8|   0|    8|          0|
+    |tmp_2_reg_457              |  64|   0|   64|          0|
+    |tmp_3_reg_472              |  64|   0|   64|          0|
+    |tmp_5_reg_467              |  64|   0|   64|          0|
+    |tmp_7_reg_411              |  12|   0|   12|          0|
+    |tmp_9_reg_503              |   8|   0|    8|          0|
+    |tmp_s_reg_452              |  64|   0|   64|          0|
+    +---------------------------+----+----+-----+-----------+
+    |Total                      | 581|   0|  621|         40|
+    +---------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWADDR   |  in |   13|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARADDR   |  in |   13|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |   greyScale  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |   greyScale  | return value |
+|interrupt               | out |    1| ap_ctrl_hs |   greyScale  | return value |
++------------------------+-----+-----+------------+--------------+--------------+
+
