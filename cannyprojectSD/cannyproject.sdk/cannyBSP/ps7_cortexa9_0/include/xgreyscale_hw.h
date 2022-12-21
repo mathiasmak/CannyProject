@@ -6,48 +6,48 @@
 // ==============================================================
 
 // AXILiteS
-// 0x000 : Control signals
-//         bit 0  - ap_start (Read/Write/COH)
-//         bit 1  - ap_done (Read/COR)
-//         bit 2  - ap_idle (Read)
-//         bit 3  - ap_ready (Read)
-//         bit 7  - auto_restart (Read/Write)
-//         others - reserved
-// 0x004 : Global Interrupt Enable Register
-//         bit 0  - Global Interrupt Enable (Read/Write)
-//         others - reserved
-// 0x008 : IP Interrupt Enable Register (Read/Write)
-//         bit 0  - Channel 0 (ap_done)
-//         bit 1  - Channel 1 (ap_ready)
-//         others - reserved
-// 0x00c : IP Interrupt Status Register (Read/TOW)
-//         bit 0  - Channel 0 (ap_done)
-//         bit 1  - Channel 1 (ap_ready)
-//         others - reserved
-// 0x200 ~
-// 0x3ff : Memory 'pixelInput' (450 * 8b)
-//         Word n : bit [ 7: 0] - pixelInput[4n]
-//                  bit [15: 8] - pixelInput[4n+1]
-//                  bit [23:16] - pixelInput[4n+2]
-//                  bit [31:24] - pixelInput[4n+3]
-// 0x400 ~
-// 0x5ff : Memory 'pixelOutput' (450 * 8b)
-//         Word n : bit [ 7: 0] - pixelOutput[4n]
-//                  bit [15: 8] - pixelOutput[4n+1]
-//                  bit [23:16] - pixelOutput[4n+2]
-//                  bit [31:24] - pixelOutput[4n+3]
+// 0x0000 : Control signals
+//          bit 0  - ap_start (Read/Write/COH)
+//          bit 1  - ap_done (Read/COR)
+//          bit 2  - ap_idle (Read)
+//          bit 3  - ap_ready (Read)
+//          bit 7  - auto_restart (Read/Write)
+//          others - reserved
+// 0x0004 : Global Interrupt Enable Register
+//          bit 0  - Global Interrupt Enable (Read/Write)
+//          others - reserved
+// 0x0008 : IP Interrupt Enable Register (Read/Write)
+//          bit 0  - Channel 0 (ap_done)
+//          bit 1  - Channel 1 (ap_ready)
+//          others - reserved
+// 0x000c : IP Interrupt Status Register (Read/TOW)
+//          bit 0  - Channel 0 (ap_done)
+//          bit 1  - Channel 1 (ap_ready)
+//          others - reserved
+// 0x0800 ~
+// 0x0fff : Memory 'pixelInput' (1536 * 8b)
+//          Word n : bit [ 7: 0] - pixelInput[4n]
+//                   bit [15: 8] - pixelInput[4n+1]
+//                   bit [23:16] - pixelInput[4n+2]
+//                   bit [31:24] - pixelInput[4n+3]
+// 0x1000 ~
+// 0x17ff : Memory 'pixelOutput' (1536 * 8b)
+//          Word n : bit [ 7: 0] - pixelOutput[4n]
+//                   bit [15: 8] - pixelOutput[4n+1]
+//                   bit [23:16] - pixelOutput[4n+2]
+//                   bit [31:24] - pixelOutput[4n+3]
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XGREYSCALE_AXILITES_ADDR_AP_CTRL          0x000
-#define XGREYSCALE_AXILITES_ADDR_GIE              0x004
-#define XGREYSCALE_AXILITES_ADDR_IER              0x008
-#define XGREYSCALE_AXILITES_ADDR_ISR              0x00c
-#define XGREYSCALE_AXILITES_ADDR_PIXELINPUT_BASE  0x200
-#define XGREYSCALE_AXILITES_ADDR_PIXELINPUT_HIGH  0x3ff
+#define XGREYSCALE_AXILITES_ADDR_AP_CTRL          0x0000
+#define XGREYSCALE_AXILITES_ADDR_GIE              0x0004
+#define XGREYSCALE_AXILITES_ADDR_IER              0x0008
+#define XGREYSCALE_AXILITES_ADDR_ISR              0x000c
+#define XGREYSCALE_AXILITES_ADDR_PIXELINPUT_BASE  0x0800
+#define XGREYSCALE_AXILITES_ADDR_PIXELINPUT_HIGH  0x0fff
 #define XGREYSCALE_AXILITES_WIDTH_PIXELINPUT      8
-#define XGREYSCALE_AXILITES_DEPTH_PIXELINPUT      450
-#define XGREYSCALE_AXILITES_ADDR_PIXELOUTPUT_BASE 0x400
-#define XGREYSCALE_AXILITES_ADDR_PIXELOUTPUT_HIGH 0x5ff
+#define XGREYSCALE_AXILITES_DEPTH_PIXELINPUT      1536
+#define XGREYSCALE_AXILITES_ADDR_PIXELOUTPUT_BASE 0x1000
+#define XGREYSCALE_AXILITES_ADDR_PIXELOUTPUT_HIGH 0x17ff
 #define XGREYSCALE_AXILITES_WIDTH_PIXELOUTPUT     8
-#define XGREYSCALE_AXILITES_DEPTH_PIXELOUTPUT     450
+#define XGREYSCALE_AXILITES_DEPTH_PIXELOUTPUT     1536
 

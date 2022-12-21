@@ -45,6 +45,18 @@ static char readText3[786486];
 int main()
 {
 
+
+
+
+
+	init_platform();
+	XGreyscale greyInstance;
+	int status;
+	status = XGreyscale_Initialize(&greyInstance , 0);
+	if(status != XST_SUCCESS){
+		return 0;
+	}
+
 	//utilFunctions* util = new utilFunctions();
 
 
@@ -72,33 +84,182 @@ int main()
     	result = file.close();
     	if (result != XST_SUCCESS) printf("Failed closing file\r\n");
 
-    	init_platform();
-    	XGreyscale greyInstance;
 
-    	XGreyscale_Initialize(&greyInstance , 0);
 
     	int amountOfColumns = 512;
     	int amountOfRows = 512;
     	int offset = 54;
 
-    	bool dataLoaded = false;
+    	char inputArray[512*3];
+    	char outputArray[512*3];
 
-    	char oneColumn[amountOfRows*3];
+    	bool allProcessed = false;
+    	bool dataReady = false;
+    	bool outputProcessed = true;
+    	bool outputReadyToBeProcessed = true;
 
-    	for(int column = 0 ; column < amountOfColumns; column = column + 1){
+    	int column = 0;
 
-    		for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
 
-    			// offset is 54. row is how far in a row and column*amountOfRows is how far we are in the 1d array
-    			// could be turned to a 2d array for easier access
-    			oneColumn[row] = readText[(offset+row)+column*amountOfRows];
+
+
+      	 int bytesPerPixel = 3;
+      	 int bytesPerRow = amountOfRows * bytesPerPixel;
+      	 int padding = bytesPerRow%4;
+
+      	//MAKE VARIABLES HERE AND MAYBE READ FROM HEADER ONE DAY
+
+      	//width of each row + bytePerRow%4(padding) up to 4 byte, hence modulo 4
+      	 int informationPerRow = amountOfRows*bytesPerPixel + padding; // = 452
+
+   		int grey = 0;
+       	for(int j = 0 ; j < amountOfRows ; j++){
+
+       		while(XGreyscale_IsReady(&greyInstance) != 1){
+
+       		}
+
+       	for(int i = 100 ; i < informationPerRow ; i = i + 3){
+
+       		inputArray[i] = readText[(offset+i)+j*informationPerRow];
+       		inputArray[i+1] = readText[(offset+i+1)+j*informationPerRow];
+       		inputArray[i+2] = readText[(offset+i+2)+j*informationPerRow];
+
+
+       		if(i == informationPerRow - padding - bytesPerPixel){
+       			i = 10000000;
+       			continue;
+       		}
+
+       		}
+
+      		XGreyscale_Write_pixelInput_Bytes(&greyInstance , 0 , inputArray , 1536);
+      		XGreyscale_Start(&greyInstance);
+      		while(XGreyscale_IsDone(&greyInstance) != 1){
+
+      		}
+      		XGreyscale_Read_pixelOutput_Bytes(&greyInstance , 0 , outputArray , 1536);
+
+
+
+       	for(int i = 100 ; i < informationPerRow ; i = i + 3){
+
+
+       	       		readText3[(offset+i)+j*informationPerRow] = outputArray[i];
+       	       		readText3[(offset+i+1)+j*informationPerRow] = outputArray[i+1];
+       	       		readText3[(offset+i+2)+j*informationPerRow] = outputArray[i+2];
+
+
+       	       		if(i == informationPerRow - padding - bytesPerPixel){
+       	       			i = 10000000;
+       	       			continue;
+       	       		}
+
+       	       		}
+
+
+
+       	}
+
+
+
+
+
+
+
+
+   	 for(int i = 0 ; i < 54 ; i++){
+   		 readText2[i] = readText[i];
+   		 readText3[i] = readText[i];
+   	 }
+
+   	 //RGB values are stored backwards i.e. BGR.
+   	//GREY SCALE
+
+       	for(int j = 0 ; j < amountOfRows ; j++){
+
+       	for(int i = 0 ; i < informationPerRow ; i = i + 3){
+       		grey=((int)readText[(offset+i)+j*informationPerRow]*0.11 + (int)readText[(offset+i+1)+j*informationPerRow]*0.59 + (int)readText[(offset+i+2)+j*informationPerRow]*0.30);
+
+       		readText2[(offset+i)+j*informationPerRow] = grey;
+       		readText2[(offset+i+1)+j*informationPerRow] = grey;
+       		readText2[(offset+i+2)+j*informationPerRow] = grey;
+
+       		if(i == informationPerRow - padding - bytesPerPixel){
+       			i = 10000000;
+       			continue;
+       		}
+
+       		}
+       	}
+
+
+
+
+/*
+    	while(!allProcessed){
+
+
+
+
+
+    		if(XGreyscale_IsReady(&greyInstance) == 1 && dataReady && outputProcessed){
+    		dataReady = false;
+    		XGreyscale_Write_pixelInput_Bytes(&greyInstance , 0 , inputArray , 512*3);
+    		XGreyscale_Start(&greyInstance);
+
+    		while(XGreyscale_IsDone(&greyInstance) != 1){
+
+    		}
+    		XGreyscale_Read_pixelOutput_Bytes(&greyInstance , 0 , outputArray , 512*3);
+    		outputProcessed = false;
+
+
     		}
 
-			while(XGreyscale_IsReady(&greyInstance) == 0){
 
-			}
+    		if(XGreyscale_IsDone(&greyInstance) == 0){
+    		    			outputReadyToBeProcessed = true;
+    		    		}
+
+
+
+
+    		if(!dataReady && outputReadyToBeProcessed){
+    			outputReadyToBeProcessed = false;
+
+
+    			if(column == amountOfColumns){
+    				allProcessed = true;
+    			}
+
+    			//this is how many bytes
+    			else{
+    	    		for(int row = 0 ; row < amountOfRows*3  ; row = row +1){
+
+    	    			// offset is 54. row is how far in a row and column*amountOfRows is how far we are in the 1d array
+    	    			// could be turned to a 2d array for easier access
+    	    			inputArray[row] = readText[(offset+row)+column*amountOfRows];
+    	    			readText[(offset+row)+column*amountOfRows] = outputArray[row];
+    	    		}
+    			}
+
+    			column = column + 1;
+    			outputProcessed = true;
+    			dataReady = true;
+
+
+    		}
+
 
     	}
+
+    	*/
+
+
+
+
+
 
 
 
@@ -113,7 +274,38 @@ int main()
         	if (result != XST_SUCCESS) printf("Failed open file for writing\r\n");
 
         	// Write to start of file
-        	result = file.write((void *)readText, sizeof(readText3));
+        	result = file.write((void *)readText, sizeof(readText));
+        	if (result != XST_SUCCESS) printf("Failed writing to file\r\n");
+
+        	result = file.close();
+        	if (result != XST_SUCCESS) printf("Failed closing file\r\n");
+
+
+
+
+            result = file.mount();
+            if (result != XST_SUCCESS) printf("Failed to mount SD card\r\n");
+
+        	// Create a new file if doesn't exist
+        	result = file.open((char*)"README2.txt", FA_WRITE);
+        	if (result != XST_SUCCESS) printf("Failed open file for writing\r\n");
+
+        	// Write to start of file
+        	result = file.write((void *)readText2, sizeof(readText2));
+        	if (result != XST_SUCCESS) printf("Failed writing to file\r\n");
+
+        	result = file.close();
+        	if (result != XST_SUCCESS) printf("Failed closing file\r\n");
+
+            result = file.mount();
+            if (result != XST_SUCCESS) printf("Failed to mount SD card\r\n");
+
+        	// Create a new file if doesn't exist
+        	result = file.open((char*)"README3.txt", FA_WRITE);
+        	if (result != XST_SUCCESS) printf("Failed open file for writing\r\n");
+
+        	// Write to start of file
+        	result = file.write((void *)readText3, sizeof(readText2));
         	if (result != XST_SUCCESS) printf("Failed writing to file\r\n");
 
         	result = file.close();

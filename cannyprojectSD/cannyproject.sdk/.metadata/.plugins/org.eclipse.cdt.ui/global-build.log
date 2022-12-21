@@ -1279,3 +1279,3397 @@ arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
  801463	   3296	2391456	3196215	 30c537	cannySDK.elf
 'Finished building: cannySDK.elf.size'
 ' '
+15:13:27 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:34: error: 'test' was not declared in this scope
+          XTestflow_Read_a_Bytes(&test , 0 , in , 10);
+                                  ^~~~
+../src/main.cc:95:52: error: 'XTestflow_Read_a_Bytes' was not declared in this scope
+          XTestflow_Read_a_Bytes(&test , 0 , in , 10);
+                                                    ^
+../src/main.cc:101:79: error: 'XGreyscale_write_pixelInput_Bytes' was not declared in this scope
+       XGreyscale_write_pixelInput_Bytes(&greyInstance , 0 , inputArray , 512*3);
+                                                                               ^
+../src/main.cc:102:37: error: 'XGreyscale_start' was not declared in this scope
+       XGreyscale_start(&greyInstance);
+                                     ^
+../src/main.cc:105:80: error: 'XGreyscale_read_pixelOutput_Bytes' was not declared in this scope
+       XGreyscale_read_pixelOutput_Bytes(&greyInstance , 0 , outputArray , 512*3);
+                                                                                ^
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = false;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:13:43 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:34: error: 'test' was not declared in this scope
+          XTestflow_Read_a_Bytes(&test , 0 , in , 10);
+                                  ^~~~
+../src/main.cc:95:52: error: 'XTestflow_Read_a_Bytes' was not declared in this scope
+          XTestflow_Read_a_Bytes(&test , 0 , in , 10);
+                                                    ^
+../src/main.cc:101:79: error: 'XGreyscale_write_pixelInput_Bytes' was not declared in this scope
+       XGreyscale_write_pixelInput_Bytes(&greyInstance , 0 , inputArray , 512*3);
+                                                                               ^
+../src/main.cc:102:37: error: 'XGreyscale_start' was not declared in this scope
+       XGreyscale_start(&greyInstance);
+                                     ^
+../src/main.cc:105:80: error: 'XGreyscale_read_pixelOutput_Bytes' was not declared in this scope
+       XGreyscale_read_pixelOutput_Bytes(&greyInstance , 0 , outputArray , 512*3);
+                                                                                ^
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:13:54 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:100:79: error: 'XGreyscale_write_pixelInput_Bytes' was not declared in this scope
+       XGreyscale_write_pixelInput_Bytes(&greyInstance , 0 , inputArray , 512*3);
+                                                                               ^
+../src/main.cc:101:37: error: 'XGreyscale_start' was not declared in this scope
+       XGreyscale_start(&greyInstance);
+                                     ^
+../src/main.cc:104:80: error: 'XGreyscale_read_pixelOutput_Bytes' was not declared in this scope
+       XGreyscale_read_pixelOutput_Bytes(&greyInstance , 0 , outputArray , 512*3);
+                                                                                ^
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:14:07 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:90:11: warning: variable 'outputReadyToBeProcessed' set but not used [-Wunused-but-set-variable]
+      bool outputReadyToBeProcessed = false;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:124:11: warning: variable 'oneColumn' set but not used [-Wunused-but-set-variable]
+      char oneColumn[amountOfRows*3];
+           ^~~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801719	   3296	2391456	3196471	 30c637	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:20:08 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:119:35: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+        if(column = amountOfColumns){
+                                   ^
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801655	   3296	2391456	3196407	 30c5f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:22:14 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:119:35: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+        if(column = amountOfColumns){
+                                   ^
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801655	   3296	2391456	3196407	 30c5f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:23:38 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:24:44 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:26:35 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:29:59 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801655	   3296	2391456	3196407	 30c5f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:30:20 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:33:21 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801655	   3296	2391456	3196407	 30c5f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:35:42 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:39:09 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801655	   3296	2391456	3196407	 30c5f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:39:26 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:40:39 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:45:31 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:46:04 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:46:44 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:49:10 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801719	   3296	2391456	3196471	 30c637	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:49:42 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:51:28 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:53:34 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:56:00 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801783	   3296	2391456	3196535	 30c677	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:56:43 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:57:51 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801719	   3296	2391456	3196471	 30c637	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+15:58:15 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:00:56 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:131:51: warning: "/*" within comment [-Wcomment]
+            for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
+                                                    
+../src/main.cc: In function 'int main()':
+../src/main.cc:131:80: error: 'row' was not declared in this scope
+            for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
+                                                                                ^~~
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:81:10: warning: unused variable 'amountOfRows' [-Wunused-variable]
+      int amountOfRows = 512;
+          ^~~~~~~~~~~~
+../src/main.cc:82:10: warning: unused variable 'offset' [-Wunused-variable]
+      int offset = 54;
+          ^~~~~~
+../src/main.cc:84:11: warning: unused variable 'inputArray' [-Wunused-variable]
+      char inputArray[512*3];
+           ^~~~~~~~~~
+../src/main.cc:85:11: warning: unused variable 'outputArray' [-Wunused-variable]
+      char outputArray[512*3];
+           ^~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc:177:1: error: expected '}' at end of input
+ }
+ ^
+../src/main.cc: At global scope:
+../src/main.cc:41:13: warning: 'readText3' defined but not used [-Wunused-variable]
+ static char readText3[786486];
+             ^~~~~~~~~
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:02:07 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801719	   3296	2391456	3196471	 30c637	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:02:22 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:130:51: warning: "/*" within comment [-Wcomment]
+            for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
+                                                    
+../src/main.cc: In function 'int main()':
+../src/main.cc:130:80: error: 'row' was not declared in this scope
+            for(int row = 0 ; row < amountOfRows*3 /*this is how many bytes*/ ; row = row +1){
+                                                                                ^~~
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:81:10: warning: unused variable 'amountOfRows' [-Wunused-variable]
+      int amountOfRows = 512;
+          ^~~~~~~~~~~~
+../src/main.cc:82:10: warning: unused variable 'offset' [-Wunused-variable]
+      int offset = 54;
+          ^~~~~~
+../src/main.cc:84:11: warning: unused variable 'inputArray' [-Wunused-variable]
+      char inputArray[512*3];
+           ^~~~~~~~~~
+../src/main.cc:85:11: warning: unused variable 'outputArray' [-Wunused-variable]
+      char outputArray[512*3];
+           ^~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:139:8: error: 'column' does not name a type
+        column = column + 1;
+        ^~~~~~
+../src/main.cc:140:8: error: 'outputProcessed' does not name a type
+        outputProcessed = true;
+        ^~~~~~~~~~~~~~~
+../src/main.cc:141:8: error: 'dataReady' does not name a type
+        dataReady = true;
+        ^~~~~~~~~
+../src/main.cc:144:7: error: expected declaration before '}' token
+       }
+       ^
+../src/main.cc:41:13: warning: 'readText3' defined but not used [-Wunused-variable]
+ static char readText3[786486];
+             ^~~~~~~~~
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:02:41 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:81:10: warning: unused variable 'amountOfRows' [-Wunused-variable]
+      int amountOfRows = 512;
+          ^~~~~~~~~~~~
+../src/main.cc:82:10: warning: unused variable 'offset' [-Wunused-variable]
+      int offset = 54;
+          ^~~~~~
+../src/main.cc:84:11: warning: unused variable 'inputArray' [-Wunused-variable]
+      char inputArray[512*3];
+           ^~~~~~~~~~
+../src/main.cc:85:11: warning: unused variable 'outputArray' [-Wunused-variable]
+      char outputArray[512*3];
+           ^~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801143	   3296	2391456	3195895	 30c3f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:06:02 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:15: error: 'row' was not declared in this scope
+    inputArray[row] = readText[(offset+i)+256*amountOfRows];
+               ^~~
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:06:23 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 801527	   3296	2391456	3196279	 30c577	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:06:59 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:13:18 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802167	   3296	2391456	3196919	 30c7f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:13:54 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:17:10 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802423	   3296	2391456	3197175	 30c8f7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:17:30 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:20:19 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802487	   3296	2391456	3197239	 30c937	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:20:56 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802871	   3296	2391456	3197623	 30cab7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:21:25 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:23:56 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802743	   3296	2391456	3197495	 30ca37	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:24:26 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:28:29 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:41:13: warning: 'readText3' defined but not used [-Wunused-variable]
+ static char readText3[786486];
+             ^~~~~~~~~
+../src/main.cc:40:13: warning: 'readText2' defined but not used [-Wunused-variable]
+ static char readText2[786486];
+             ^~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802743	   3296	2391456	3197495	 30ca37	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:36:21 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:175:10: error: redeclaration of 'int offset'
+      int offset = 54;
+          ^~~~~~
+../src/main.cc:82:10: note: 'int offset' previously declared here
+      int offset = 54;
+          ^~~~~~
+../src/main.cc:176:10: error: redeclaration of 'int amountOfRows'
+      int amountOfRows = 512;
+          ^~~~~~~~~~~~
+../src/main.cc:81:10: note: 'int amountOfRows' previously declared here
+      int amountOfRows = 512;
+          ^~~~~~~~~~~~
+../src/main.cc:177:10: error: redeclaration of 'int amountOfColumns'
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:80:10: note: 'int amountOfColumns' previously declared here
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc:187:10: warning: unused variable 'sizeOfFile' [-Wunused-variable]
+      int sizeOfFile = amountOfRows*amountOfColumns*bytesPerPixel + (amountOfRows*padding) + offset;
+          ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+16:36:26 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+../src/main.cc:184:10: warning: unused variable 'sizeOfFile' [-Wunused-variable]
+      int sizeOfFile = amountOfRows*amountOfColumns*bytesPerPixel + (amountOfRows*padding) + offset;
+          ^~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803767	   3296	2391456	3198519	 30ce37	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:36:32 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803639	   3296	2391456	3198391	 30cdb7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:37:29 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803447	   3296	2391456	3198199	 30ccf7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:37:42 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803655	   3296	2391456	3198407	 30cdc7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:38:03 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:49:51 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:113:29: error: 'informationPerRow' was not declared in this scope
+         for(int i = 0 ; i < informationPerRow ; i = i + 3){
+                             ^~~~~~~~~~~~~~~~~
+../src/main.cc:131:38: error: 'padding' was not declared in this scope
+          if(i == informationPerRow - padding - bytesPerPixel){
+                                      ^~~~~~~
+../src/main.cc:131:48: error: 'bytesPerPixel' was not declared in this scope
+          if(i == informationPerRow - padding - bytesPerPixel){
+                                                ^~~~~~~~~~~~~
+../src/main.cc:161:10: error: redeclaration of 'int grey'
+      int grey = 0;
+          ^~~~
+../src/main.cc:110:10: note: 'int grey' previously declared here
+      int grey = 0;
+          ^~~~
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+16:50:30 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802823	   3296	2391456	3197575	 30ca87	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:51:12 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802951	   3296	2391456	3197703	 30cb07	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+16:51:30 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:31:55 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:43:32 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803399	   3296	2391456	3198151	 30ccc7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:42:58 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803399	   3296	2391456	3198151	 30ccc7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:43:40 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:44:08 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803399	   3296	2391456	3198151	 30ccc7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:44:27 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:24 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803079	   3296	2391456	3197831	 30cb87	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:50:39 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:09:14 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802951	   3296	2391456	3197703	 30cb07	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+10:09:47 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:141:36: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+         while(XGreyscale_IsDone != 1){
+                                    ^
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+10:10:13 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:87:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:88:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:89:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:90:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:92:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803015	   3296	2391456	3197767	 30cb47	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+10:11:21 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:37:31 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:55:2: error: 'status' was not declared in this scope
+  status = XGreyscale_Initialize(&greyInstance , 0);
+  ^~~~~~
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+10:37:38 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803079	   3296	2391456	3197831	 30cb87	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+10:54:19 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803207	   3296	2391456	3197959	 30cc07	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+10:54:37 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:55:19 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:57:58 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803207	   3296	2391456	3197959	 30cc07	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+10:58:26 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:00:34 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803207	   3296	2391456	3197959	 30cc07	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:01:32 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802823	   3296	2391456	3197575	 30ca87	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:02:19 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:29:12 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:37:26 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:37:33 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:40:14 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:40:35 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:42:13 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:45:16 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:45:27 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+11:46:05 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:47:47 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:12:05 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:15:06 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:16:33 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+22:02:24 **** Auto Build of project cannyBSP ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling greyScale"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+'Finished building libraries'
+22:03:02 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+22:03:49 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:03:40 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802887	   3296	2391456	3197639	 30cac7	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:04:43 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:05:32 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:09:48 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802959	   3296	2391456	3197711	 30cb0f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:10:49 **** Auto Build of project cannyBSP ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling greyScale"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+'Finished building libraries'
+19:11:20 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802959	   3296	2391456	3197711	 30cb0f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:12:40 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:17:07 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802959	   3296	2391456	3197711	 30cb0f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:17:20 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802959	   3296	2391456	3197711	 30cb0f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:20:23 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:45:37 **** Auto Build of project cannyBSP ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/greyScale_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/greyScale_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling greyScale"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+'Finished building libraries'
+19:46:07 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802959	   3296	2391456	3197711	 30cb0f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:47:45 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:124:10: error: expected ';' before 'inputArray'
+          inputArray[i+1] = readText[(offset+i+1)+j*informationPerRow]
+          ^~~~~~~~~~
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+19:47:56 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:48:31 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+19:49:24 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:49:39 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:04:22 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:11:47 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:93:11: warning: variable 'inputArray' set but not used [-Wunused-but-set-variable]
+      char inputArray[512*3];
+           ^~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802895	   3296	2391456	3197647	 30cacf	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:11:59 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:14:02 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:160:9: error: 'XGreyscale_re' was not declared in this scope
+         XGreyscale_re
+         ^~~~~~~~~~~~~
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+21:14:12 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:93:11: warning: variable 'inputArray' set but not used [-Wunused-but-set-variable]
+      char inputArray[512*3];
+           ^~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 802895	   3296	2391456	3197647	 30cacf	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:19:37 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803151	   3296	2391456	3197903	 30cbcf	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:20:58 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:21:32 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:22:35 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:22:48 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:23:18 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:25:04 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:27:36 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:27:48 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:28:08 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:28:32 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:30:34 **** Auto Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cannyBSP/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:10: warning: unused variable 'amountOfColumns' [-Wunused-variable]
+      int amountOfColumns = 512;
+          ^~~~~~~~~~~~~~~
+../src/main.cc:96:11: warning: unused variable 'allProcessed' [-Wunused-variable]
+      bool allProcessed = false;
+           ^~~~~~~~~~~~
+../src/main.cc:97:11: warning: unused variable 'dataReady' [-Wunused-variable]
+      bool dataReady = false;
+           ^~~~~~~~~
+../src/main.cc:98:11: warning: unused variable 'outputProcessed' [-Wunused-variable]
+      bool outputProcessed = true;
+           ^~~~~~~~~~~~~~~
+../src/main.cc:99:11: warning: unused variable 'outputReadyToBeProcessed' [-Wunused-variable]
+      bool outputReadyToBeProcessed = true;
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:101:10: warning: unused variable 'column' [-Wunused-variable]
+      int column = 0;
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: cannySDK.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cannyBSP/ps7_cortexa9_0/lib -o "cannySDK.elf"  ./src/FileSDCard.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cannySDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cannySDK.elf  |tee "cannySDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 803087	   3296	2391456	3197839	 30cb8f	cannySDK.elf
+'Finished building: cannySDK.elf.size'
+' '
+21:31:13 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:31:59 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:32:35 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:33:15 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:41:22 **** Incremental Build of configuration Debug for project cannySDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
